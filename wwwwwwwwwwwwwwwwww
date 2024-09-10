@@ -1,0 +1,12 @@
+ingestionBucketUrl: process.env.REACT_APP_INGESTION_GCS_BUCKET_URL || 
+    (process.env.REACT_APP_ENV === 'qa'
+      ? 'https://console.cloud.google.com/storage/browser/gcs-qa'
+      : process.env.REACT_APP_ENV === 'dev'
+      ? 'https://console.cloud.google.com/storage/browser/gcs-dev'
+      : 'https://console.cloud.google.com/storage/browser/gcs-default')
+};
+
+
+
+
+
